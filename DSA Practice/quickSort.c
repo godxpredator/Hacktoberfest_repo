@@ -1,5 +1,5 @@
 #include<stdio.h>
-int partion(int part[],int low,int high){
+int fart(int part[],int low,int high){
     int pivot=part[low];
     int i=low+1;
     int j=high;
@@ -24,7 +24,7 @@ int partion(int part[],int low,int high){
 void quicksort(int sort[],int low,int high){
     int partionPoint;
     if(low<high){
-        partionPoint = partion(sort,low,high);
+        partionPoint = fart(sort,low,high);
         quicksort(sort,low,partionPoint-1);
         quicksort(sort,partionPoint+1,high);
     }
