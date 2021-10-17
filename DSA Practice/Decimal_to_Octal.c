@@ -17,4 +17,5 @@ void main(){
     scanf("%d\n",&n);
     res=choctal(n);
     printf("Octal number is:-\n%d",res);
+    printf("Thank You");
 }
