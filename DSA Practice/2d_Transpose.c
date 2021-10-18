@@ -14,11 +14,11 @@ int main(){
     }
     int arrT[n][m];
     for(int i=0;i<n;i++){
-        for(int j=0;j<m;j++){
-            arrT[i][j]=arr[j][i];
+        for(int k=0;k<m;k++){
+            arrT[i][k]=arr[k][i];
         }
     }
-    printf("It's Transpose is:-\n");
+    printf("It's matrix Transpose is:-\n");
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
             printf(" %d ",arrT[i][j]);
