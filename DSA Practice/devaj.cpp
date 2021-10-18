@@ -2,6 +2,7 @@
 using namespace std;
 int main() 
 {
+	cout<<"Enter to the code:-\n";
 	int t,n,i,j,k,count;
 	cin>>t;
 	while(t--)
@@ -35,4 +36,5 @@ int main()
 	    }
 	}
 	return 0;
+	cout<<"Thanks for supporting\n";
 }
