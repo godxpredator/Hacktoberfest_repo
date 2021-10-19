@@ -1,9 +1,9 @@
 #include<stdio.h>
 void main(){
-    int test;
-    scanf("%d",&test);
+    int try;
+    scanf("%d",&try);
     int x=0;
-    while(++x<=test){
+    while(++x<=try){
         int n;
         scanf("%d",&n);
         int arr[n];
@@ -24,7 +24,7 @@ void main(){
                 reslen=currlen;
             }
         }
-        printf("#%d: %d",x,reslen);
+        printf("X is equal to %d : reslen is equal to %d",x,reslen);
 
     }
 }
