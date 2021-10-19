@@ -25,7 +25,8 @@ int main(){
         }
         x++;
     }
-    cout<<"the sorted array:-\n";
+    // features
+    cout<<"the array is sorted:-\n";
     for(int i=0;i<n;i++){
         cout<<arr[i]<<ends;
     }
