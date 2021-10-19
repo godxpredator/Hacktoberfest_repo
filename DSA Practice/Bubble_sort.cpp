@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     int n;
-    cout<<"Enter the array length:-\n";
+    cout<<"Enter the length:-\n";
     cin>>n;
     int arr[n];
     cout<<"Enter your array elements:-\n";
