@@ -15,7 +15,5 @@ void main(){
     int n,res;
     printf("Enter a Decimal number:-\n");
     scanf("%d\n",&n);
-    res=choctal(n);
-    printf("Octal number is:-\n%d",res);
-    printf("Thank You");
+    printf("Octal number is:-\n%d",choctal(n));
 }
