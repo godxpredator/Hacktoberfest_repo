@@ -1,21 +1,35 @@
-#include<stdio.h>
-void main(){
-    int n;
-    printf("Enter Array Length:-\n");
-    scanf("%d",&n);
-    int arr[n];
-    printf("Enter Array elements:-\n");
-    for(int i=0;i<n;i++)
-    scanf("%d",&arr[i]);
-    int max=-9999999;
-    int min=9999999;
-    for(int i=0;i<n;i++){
-        if(arr[i]>max){
-            max=arr[i];
-        }
-        if(arr[i]<min){
-            min=arr[i];
-        }
+#include <stdio.h>
+ #include <conio.h>
+ 
+ int sumofarray(int a[],int n)
+ {
+ 	int min,max,i;
+ 	min=max=a[0];
+    for(i=1; i<n; i++)
+    {
+         if(min>a[i])
+		  min=a[i];   
+		   if(max<a[i])
+		    max=a[i];       
     }
-    printf("Maximum element in array is %d \nMinimum element in array is %d",max,min);
+    
+    printf("minimum of array is : %d",min);
+    printf("\nmaximum of array is : %d",max);
+ }
+int main()
+{
+    int a[1000],i,n,sum;
+   
+    printf("Enter size of the array : ");
+    scanf("%d", &n);
+ 
+    printf("Enter elements in array : ");
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    sumofarray(a,n);
+ 
+ 
+    
 }
