@@ -1,15 +1,25 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,i;
     printf("Enter array length : \n");
     scanf("%d",&n);
     int arr[n];
     printf("Enter the array : \n");
-    for(int i=0;i<n;i++)
+    for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
     }
+    selectionsort(a,n);
+    printf("sorted array :");
+	for(i=0;i<n;i++){
+		printf("%d\t",a[i]);
+	}
+}
+    
+
+int selectionsort(int arr[],int n){
+    int i,j;
     for(int i=0;i<n-1;i++)
     {
         for(int j=i+1;j<n;j++)
@@ -22,11 +32,4 @@ int main()
             }
         }
     }
-    printf("Sorted Array by selection sort : \n");
-    for(int i=0;i<n;i++)
-    {
-        printf(" %d",arr[i]);
-    }
-    return 0;
-    printf("See You Again");
-}
+  
