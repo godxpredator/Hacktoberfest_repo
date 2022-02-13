@@ -1,0 +1,1 @@
+•	Implemented tenserflow to show test loss and test accuracy in deep learning                 
